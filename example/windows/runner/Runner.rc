@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "icodeforyou.com" "\0"
-            VALUE "FileDescription", "bundleSuffix" "\0"
+            VALUE "FileDescription", "ui_async_button_demo" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "bundleSuffix" "\0"
+            VALUE "InternalName", "ui_async_button_demo" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 icodeforyou.com. All rights reserved." "\0"
-            VALUE "OriginalFilename", "bundleSuffix.exe" "\0"
-            VALUE "ProductName", "bundleSuffix" "\0"
+            VALUE "OriginalFilename", "ui_async_button_demo.exe" "\0"
+            VALUE "ProductName", "ui_async_button_demo" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

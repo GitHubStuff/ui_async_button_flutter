@@ -1,6 +1,6 @@
 {
-    "name": "bundleSuffix",
-    "short_name": "bundleSuffix",
+    "name": "ui_async_button_demo",
+    "short_name": "ui_async_button_demo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

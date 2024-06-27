@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../gen/assets.gen.dart';
+import 'package:ui_async_button_flutter/ui_async_button_flutter.dart';
 
-//TODO: Replace with your samples that feature your package
-import 'package:package_template/package_template.dart';
+import '../widgets/spinning_ear.dart';
 
 class InitialScreen extends StatelessWidget {
-  final String title;
   static const String route = '/InitialScreen';
 
-  const InitialScreen({super.key, required this.title});
+  const InitialScreen({
+    super.key,
+    this.title = 'Initial Screen',
+  });
 
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,14 +45,7 @@ class InitialScreen extends StatelessWidget {
               );
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
-            child: SizedBox(
-              width: 100,
-              height: 100,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Assets.images.ltmm1024x1024.image(),
-              ),
-            ),
+            child: const EarSpinner(),
           ),
           const Gap(15.0),
         ],

@@ -1,31 +1,4 @@
-# SETUP
-
-- Find/Replace `package_template` to name of the name of the package (ex: `flutter_rocks`), using the folder the of the package is a good practice, but not an absolute.
-
-- Follow the instructions in the **/example/README.md** to have the demo app show features of the package with a live demo for dark, light, and system themes.
-
-- Address the *TODO:* in files in the **/example** folder by adding code from the package
-
-<!--
-The comments below are from the Flutter/Dart package generation. Feel free to use or ignore
--->
-
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
-
-Remove everything from here to the top
--->
-
-# UIMarqueeWidget
+# UISyncButtonFlutter
 
 A widget that display text like scrolling theatre marquee
 
@@ -33,14 +6,14 @@ A widget that display text like scrolling theatre marquee
 
 ```yaml
 dev_dependencies:
-  ui_marquee_flutter:
-    git: https://github.com/GitHubStuff/ui_marquee_flutter.git
+  ui_async_button_flutter:
+    git: https://github.com/GitHubStuff/ui_async_button_flutter.git
 ```
 
 ## Usage
 
 ```dart
-import 'package:ui_marquee_flutter/ui_marquee_flutter.dart';
+import 'package:ui_async_button_flutter/ui_async_button_flutter.dart';
   :
   :
 

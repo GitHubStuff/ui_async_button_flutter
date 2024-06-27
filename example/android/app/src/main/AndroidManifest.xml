@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.icodeforyou.bundleSuffix">
+    package="com.icodeforyou.ui_async_button_demo">
    <application
-        android:label="MyAppName"
+        android:label="Async Button Demo"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

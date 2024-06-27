@@ -1,6 +1,6 @@
-# MyAppName
+# Async Button Demo
 
-- **LAST UPDATED 17-MAY-2024**
+- **LAST UPDATED 27-JUN-2024**
 
 A complete, self-contained, **Flutter Demo App** that is the development view of an **App** for iOS, MacOS, Android, Windows, and Chrome review and updates.
 
@@ -44,31 +44,31 @@ This allows the demo app to run in Dark, Light, or System mode. ***This simple t
 
 ### These are the steps when using VSCode
 
-- Find/Replace `app_template` to name of the demo app (ex: `new_demo`) in the example pubspec.yaml
-- Find/Replace `MyAppName` to a label used to name the app on mobile Platforms (ex:`My Spiffy Mobile App`), this changes up the Android and iOS app names.
-- Find/Replace `macOSName` to the name of your macOS app (ex: `My Spiffy macOS App`), this changes up the MacOS name.
+- Find/Replace `async_button_demo` to name of the demo app (ex: `new_demo`) in the example pubspec.yaml
+- Find/Replace `Async Button Demo` to a label used to name the app on mobile Platforms (ex:`My Spiffy Mobile App`), this changes up the Android and iOS app names.
+- Find/Replace `Async Button Demo for Mac` to the name of your macOS app (ex: `My Spiffy macOS App`), this changes up the MacOS name.
 - Find/Replace `icodeforyou.com` to the project down for the product/customer (ex: `apple.com`), the domain is used in iOS and Windows.
 - Find/Replace `com.icodeforyou` with the projects **reverse domain** that the start of the apps' identifier (ex: `com.apple`), used in iOS, Android, and Linux
-- Find/Replace `bundleSuffix` with bundle id (ex: `my_spiffy_app`) **[using the folder name is ideal]**, this used for every platform.
-- Find/Replace `AppleSuffix` for Apple bundles as iOS/MacOS do like '_'. **[ideal is folder name to lower-camel case (ex: `mySpiffyApp`)]**, used by iOS and MacOS
+- Find/Replace `ui_async_button_demo` with bundle id (ex: `my_spiffy_app`) **[using the folder name is ideal]**, this used for every platform.
+- Find/Replace `uiAsyncButton` for Apple bundles as iOS/MacOS do like '_'. **[ideal is folder name to lower-camel case (ex: `mySpiffyApp`)]**, used by iOS and MacOS
 
-- The image `/assets/images/ltmm1024x1024.png` is a placeholder image to generate application icons. In the `pubspec.yaml` file is section marked *flutter_icons*:
+- The image `/assets/images/ear1024x1024.png` is a placeholder image to generate application icons. In the `pubspec.yaml` file is section marked *flutter_icons*:
 
   ```dart
   flutter_icons:
   android: 'launcher_icon'
   ios: true
   remove_alpha_ios: true
-  image_path: 'assets/images/ltmm1024x1024.png'
+  image_path: 'assets/images/ear1024x1024.png'
   macos:
     generate: true
-    image_path: 'assets/images/ltmm1024x1024.png'
+    image_path: 'assets/images/ear1024x1024.png'
   web:
     generate: true
-    image_path: 'assets/images/ltmm1024x1024.png'
+    image_path: 'assets/images/ear1024x1024.png'
   windows:
     generate: true
-    image_path: 'assets/images/ltmm1024x1024.png'
+    image_path: 'assets/images/ear1024x1024.png'
 
   ```
 
@@ -82,7 +82,7 @@ This allows the demo app to run in Dark, Light, or System mode. ***This simple t
 
   generating icons for iOS/Mac/Android/Web and even Windows *(Widows sucks but I guess someone has to do it.)*
 
-  NOTE: The sample app already has the [ltmm1024x1024](assets/images/ltmm1024x1024.png). The best images are 1024x1024. Replace the image and make sure the `image_path` in `pubspec.yaml` is updated and re-run:
+  NOTE: The sample app already has the [ear1024x1024](assets/images/ear1024x1024.png). The best images are 1024x1024. Replace the image and make sure the `image_path` in `pubspec.yaml` is updated and re-run:
 
   `% dart run flutter_launcher_icons` again.
 

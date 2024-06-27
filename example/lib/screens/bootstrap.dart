@@ -1,4 +1,4 @@
-import 'package:app_template/screens/initial_screen.dart';
+import 'package:async_button_demo/screens/initial_screen.dart';
 import 'package:flutter/material.dart';
 
 void bootStrap(ThemeMode themeMode) {
