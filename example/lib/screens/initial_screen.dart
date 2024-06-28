@@ -1,9 +1,12 @@
+import 'dart:math';
+
+import 'package:async_button_demo/gs/bloc/async_button_state.dart';
+import 'package:async_button_demo/gs/models/cancellable_class.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'package:ui_async_button_flutter/ui_async_button_flutter.dart';
-
-import '../widgets/spinning_ear.dart';
+import '../gs/widgets/async_button_widget.dart';
+import '../widgets/spinning_image.dart';
 
 class InitialScreen extends StatelessWidget {
   static const String route = '/InitialScreen';
@@ -37,19 +40,40 @@ class InitialScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           GestureDetector(
-            onTap: () {
-              const snackBar = SnackBar(
-                content: Text('🤣 That Tickles!'),
-                duration: Duration(milliseconds: 500),
-                behavior: SnackBarBehavior.floating,
-              );
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              onTap: () {
+                const snackBar = SnackBar(
+                  content: Text('🤣 That Tickles!'),
+                  duration: Duration(milliseconds: 500),
+                  behavior: SnackBarBehavior.floating,
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              },
+              child: const LogoImage(size: Size(128, 128))),
+          const Gap(30),
+          AsyncButtonWidget(
+            asyncAwaitWidget: const SpinngingImage(
+              spinningWidget: EarImage(
+                size: Size(128, 128),
+              ),
+            ),
+            enabledWidget: const LogoImage(
+              size: Size(128, 128),
+            ),
+            initialState: AsyncButtonState.enabled,
+            disableCancel: false,
+            task: CancellableClass(),
+            taskState: (state) {
+              debugPrint('🔵 Task State: $state');
             },
-            child: const EarSpinner(),
+            size: const Size(64, 64),
           ),
-          const Gap(15.0),
         ],
       ),
     );
+  }
+
+  bool getRandomBoolean() {
+    final random = Random();
+    return random.nextBool();
   }
 }
